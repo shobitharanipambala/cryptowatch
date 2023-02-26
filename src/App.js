@@ -41,9 +41,9 @@ function App() {
         {/* register  */}
         <PublicRoute path="/register" component={Register}></PublicRoute>   
         {/* homepage */}
-        <PrivateRoute path="/" component={Homepage}></PrivateRoute>
+        {/* <PrivateRoute path="/" component={Homepage}></PrivateRoute> */}
         {/* coin page */}
-        <PrivateRoute path="/coin/:id" component={CoinPage}></PrivateRoute>
+        {/* <PrivateRoute path="/coin/:id" component={CoinPage}></PrivateRoute> */}
       </CustomApp>
     </BrowserRouter>
   );
