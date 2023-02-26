@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cryptowatch/static/css/main.2865d55d.css",
+    "main.js": "/cryptowatch/static/js/main.e43b95ac.js",
+    "index.html": "/cryptowatch/index.html",
+    "main.2865d55d.css.map": "/cryptowatch/static/css/main.2865d55d.css.map",
+    "main.e43b95ac.js.map": "/cryptowatch/static/js/main.e43b95ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2865d55d.css",
+    "static/js/main.e43b95ac.js"
+  ]
+}
