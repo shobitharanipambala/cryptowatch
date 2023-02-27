@@ -33,17 +33,18 @@ function App() {
       <CustomApp>
         <Header />
         
+        
         {/* your private and public routes goes here */}
        
         {/* step -1 */}
          {/*login   */}
-        <PublicRoute path="/login" component={LoginPage}></PublicRoute> 
+         <PublicRoute path="/login" component={LoginPage}></PublicRoute> 
         {/* register  */}
         <PublicRoute path="/register" component={Register}></PublicRoute>   
         {/* homepage */}
-        {/* <PrivateRoute path="/" component={Homepage}></PrivateRoute> */}
+       <PrivateRoute  path="/home" component={Homepage}></PrivateRoute> 
         {/* coin page */}
-        {/* <PrivateRoute path="/coin/:id" component={CoinPage}></PrivateRoute> */}
+         <PrivateRoute path="/coins/:id" component={CoinPage}></PrivateRoute> 
       </CustomApp>
     </BrowserRouter>
   );

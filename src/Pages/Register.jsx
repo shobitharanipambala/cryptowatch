@@ -9,7 +9,11 @@ const Register = () => {
     // history.push(credentials);
     const handleRegister = (e) => {
         e.preventDefault();
-        history.push(credentials);
+        // step -2
+        localStorage.setItem('credentials', JSON.stringify(credentials));
+        history.push('/login');
+        console.log(credentials);
+        
 
         // set the user data to the localStorage
         

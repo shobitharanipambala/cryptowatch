@@ -7,15 +7,36 @@ const LoginPage = () => {
   const [credentials, setCredentials] = useState({ email: '', password: ''})
 
   const history = useHistory()
-  // history.push(credentials);
+  
 
   const handleLogin = (e) => {
     e.preventDefault();
     history.push(Homepage);
-   
+     
 
     
     // get the user data from the localStorage if matches take the user to Home page
+    // step 2
+   
+    
+    localStorage.setItem('credentials', JSON.stringify(credentials));
+    const user = JSON.parse(localStorage.getItem('credentials'));
+    
+    if(user.email === credentials.email && user.password === credentials.password){
+        return history.push('/home');
+    }
+    else{
+        alert('credentials are not valid');
+    }
+
+  
+    
+
+
+
+
+
+
 
   }
   const handleChange = (e) => {
